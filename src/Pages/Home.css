@@ -1,0 +1,99 @@
+.playerList {
+  margin: 40px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playerList-tables {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.playerList-table {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.players-in {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: green;
+  cursor: pointer;
+  width: 100%;
+  max-width: 80%;
+}
+
+.players-out {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  width: 100%;
+  max-width: 80%;
+}
+
+.players-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.playerList-table-header-cell {
+  font-size: 22px;
+ 
+ }
+
+.proceed-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+  width: 100%;
+}
+
+.proceed-button button {
+  border: 0;
+  outline: 0;
+  color: rgb(14, 12, 12);
+  padding: 14px 50px;
+  width: 300px;
+  cursor: pointer;
+  background-color: blue;
+}
+
+@media (max-width: 768px) {
+  .playerList-tables {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
+  }
+  .players-in {
+      width: 400px;
+  }
+
+  .players-out {
+      width: 400px;
+  }
+}
